@@ -13,13 +13,13 @@ def insertUser( name, BloodType):
         host="rm-l4v8h4l822517sl86xo.mysql.me-central-1.rds.aliyuncs.com",
         user="bloodbank",
         password="batool@1997",
-        db="bloodbankdb",
+        db="bloodbankdb"
     )
     cur = con.cursor()
     try:
         cur.execute(
             "INSERT INTO User (name,BloodType) VALUES (%s,%s)",
-            (name,BloodType),
+            (name,BloodType)
         )
         con.commit()
         cur.close()
