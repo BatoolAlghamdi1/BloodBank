@@ -10,8 +10,8 @@ import os
 
 def insertUser( name, BloodType):
     con = mysql.connect(
-        host="rm-l4v8h4l822517sl86xo.mysql.me-central-1.rds.aliyuncs.com",
-        user="bloodbank",
+        host="rm-l4vy0h5r7t2sbvu48.mysql.me-central-1.rds.aliyuncs.com",
+        user="batool",
         password="batool@1997",
         db="bloodbankdb"
     )
