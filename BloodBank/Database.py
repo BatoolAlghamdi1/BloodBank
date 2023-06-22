@@ -30,4 +30,4 @@ def insertUser( name, BloodType):
         con.close()
         return False
 
-insertUser ("batool",'o+')
+
