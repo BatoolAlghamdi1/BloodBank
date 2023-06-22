@@ -8,7 +8,7 @@ import mysql.connector
 
 def insertUser( name, BloodType):
     con = mysql.connect(
-        host="rm-l4vy0h5r7t2sbvu48.mysql.me-central-1.rds.aliyuncs.com",
+        host="rm-l4vy0h5r7t2sbvu48vo.mysql.me-central-1.rds.aliyuncs.com",
         port = 3306,
         user="batool",
         password="batool@1997",
