@@ -1,5 +1,5 @@
-from flask import Flask , render_template
-
+from flask import Flask , render_template, request, redirect, url_for
+from Database import insertUser
 app = Flask(__name__)
 
 
@@ -18,4 +18,12 @@ def donate():
 @app.route('/help.html')
 def help():
     return render_template('help.html')
+
+
+@app.route('/insert', methods = ['POST'])
+def insert():
+    name = request.form['name']
+    blood = request.form['blood']
+    insertUser(name, blood)
+    return redirect(url_for('Register'))
 
