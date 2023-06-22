@@ -1,6 +1,4 @@
-import mysql.connector as mysql
-from mysql.connector import errorcode
-import os
+import mysql.connector 
 
 # Table creation
 # CREATE TABLE IF NOT EXISTS User (
